@@ -1,13 +1,14 @@
 .caurosel{
-  height: 40%;
-  width: 100%;
-  margin: 0px
+  height: 430px;
+  margin: 0px;
 }
 
 .featuredProducts{
-  height: 40%
+  display: flex;
+  flex-direction: row;
 }
 
 .otherProducts{
-  height: 30%
+  height: 300px;
+  margin: 0px;
 }
