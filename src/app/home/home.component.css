@@ -8,6 +8,32 @@
   flex-direction: row;
 }
 
+.featuredProductsImage{
+  width:fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 5px;
+  margin: 0px auto;
+}
+
+.featuredProductsImage:hover{
+  cursor: pointer;
+}
+
+.featuredProductsDescription{
+  position: absolute;
+  top: 700px;
+  display: none;
+  margin-left: 5px;
+  width:240px;
+  height: fit-content;
+}
+
+.featuredProductsImage > img{
+  width:240px;
+  height:360px;
+  padding: 20px;
+}
 .otherProducts{
   height: 300px;
   margin: 0px;
