@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Image {
-  userId: string
-  id: string
-  title: string
+  userId: string,
+  id: string,
+  title: string,
   completed: string
 }
 
