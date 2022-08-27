@@ -1,26 +1,26 @@
-<mat-toolbar>
-    <div style="display: flex; margin-left:30px">
+<mat-toolbar style="width: 100%;">
+    <div class="logoStyle"><!-- logoStyle-->
         <button
         mat-icon-button class="example-icon"
         aria-label="Example icon-button with menu icon"
         routerLink="/accounts" routerLinkActive="active"
         >
-            <mat-icon style="color: rgb(251, 131, 45);">person_add</mat-icon>
+          <mat-icon class="logoStyleIcon">person_add</mat-icon><!--logoStyleIcon-->
         </button>
-          <div style="color: white; font-size: 24px; font-weight: 600;  margin-top: 5px;">BamojaApp </div>
+        <div class="logo">BamojaApp </div><!--logo-->
     </div>
 
     <span class="example-spacer"></span>
-    <div style="width: 40%; border-color: white;">
+    <div class="searchBarStyle"><!-- searchBarStyle-->
         <div class="example-form-field">
-            <input matInput type="text" style="padding-left: 20px; background-color: #FFE4C4; border-radius: 20px; border-color:white; width: 100%; height: 40px; font-size:16px">
-            <button  matSuffix mat-icon-button aria-label="Clear" style="color: rgb(251, 131, 45);  margin-left: -45px;">
-              <mat-icon style=" font-size: 30px;">search</mat-icon>
+            <input matInput type="text" class="searchBarArea"><!--searchBarArea -->
+            <button  matSuffix mat-icon-button aria-label="Clear" class="searchBarBtn"><!--searchBarBtn-->
+              <mat-icon style=" font-size: 30px;">search</mat-icon><!--searchBarIcon-->
             </button>
         </div>
     </div>
     <span class="example-spacer"></span>
-    <div>
+    <div class="navigaltionIconStyle">
         <button
         mat-icon-button
         class="example-icon"

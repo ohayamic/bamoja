@@ -1,3 +1,43 @@
+.logoStyle{
+  display: flex;
+  margin-left:30px
+}
+
+.logoStyleIcon{
+  color: rgb(251, 131, 45);
+}
+
+.logo{
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.searchBarStyle{
+  width: 40%;
+  border-color: white
+}
+
+.searchBarArea{
+  padding-left: 20px;
+  background-color: #FFE4C4;
+  border-radius: 20px;
+  border-color:white;
+  width: 100%;
+  height: 40px;
+  font-size:16px
+}
+
+.searchBarBtn{
+  color: rgb(251, 131, 45);
+  margin-left: -45px;
+}
+
+.navigaltionIconStyle{
+  display: flex;
+}
+
 mat-toolbar{
     background-color: rgb(251, 131, 45);
     padding: 10px;
@@ -17,3 +57,14 @@ mat-toolbar{
 .example-spacer {
   flex: 1 1 auto;
   }
+
+
+@media screen and (max-width: 960px) {
+.logoStyle{
+display: none;
+}
+
+.searchBarArea{
+display: none;
+}
+}
