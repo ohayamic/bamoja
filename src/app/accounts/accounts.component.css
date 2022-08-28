@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.widthSize{
+  width: 49%;
+  margin-left: 1%;
+}
+
 td {
   padding-right: 8px;
 }
@@ -24,11 +29,18 @@ td {
   margin: 0 auto
 }
 
-.contentStyle> div> div>button{
+.contentStyle>div>div>button{
 font-size:24px;
 margin: 10px 10px;
 height: 50px;
 width: 45%
+}
+
+.createBtn{
+font-size:24px;
+margin: 10px auto;
+height: 50px;
+width: 90% ;
 }
 
 @media screen and (max-width: 960px) {
@@ -40,6 +52,11 @@ width: 45%
   .example-full-width {
   width: 100%;
 }
+
+.widthSize{
+  width: 100%;
+}
+
   .imgStyle{
   width:90%;
   margin: 0 auto
@@ -54,6 +71,13 @@ width: 45%
 font-size:16px;
 margin: 10px 10px;
 height: 40px;
-width: 35%
+width: 40%
+}
+
+.createBtn{
+font-size:20px;
+margin: 10px auto;
+height: 50px;
+width: 100% ;
 }
 }
