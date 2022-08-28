@@ -60,11 +60,11 @@ mat-toolbar{
 
 
 @media screen and (max-width: 960px) {
-.logoStyle{
+.logo{
 display: none;
 }
 
-.searchBarArea{
+.searchBarStyle{
 display: none;
 }
 }

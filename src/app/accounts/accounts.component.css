@@ -1,6 +1,6 @@
 .example-form {
   min-width: 150px;
-  margin: 10px auto;
+  margin: 100px auto;
   display: flex;
   width: 90%;
   height: 100%;
@@ -44,10 +44,11 @@ width: 90% ;
 }
 
 @media screen and (max-width: 960px) {
-  .example-form {
-  display:flex;
-  flex-direction: column;
-  }
+.example-form {
+display:flex;
+margin: 10px auto;
+flex-direction: column;
+}
 
   .example-full-width {
   width: 100%;

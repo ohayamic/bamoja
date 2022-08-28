@@ -3,7 +3,7 @@
   margin: 100px auto;
   display: flex;
   width: 90%;
-  height: 50%;
+  height: 100%;
 }
 
 .example-full-width {
@@ -27,6 +27,7 @@ td {
 @media screen and (max-width: 960px) {
 .example-form {
 display:flex;
+margin: 10px auto;
 flex-direction: column;
 }
 
