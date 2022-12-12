@@ -8,13 +8,12 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { PasswordChangeComponent } from './password-change/password-change.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'accounts', component: AccountsComponent },
-  { path: 'password/change', component: PasswordChangeComponent}
-
+  { path: 'password/change', component: PasswordChangeComponent },
+  { path: 'about/page', component: AboutComponent },
 ];
 
 @NgModule({
