@@ -1,26 +1,24 @@
-<form class="example-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+<form class="example-form" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
   <div class="imgStyle">
     <img src="https://images.unsplash.com/photo-1580810734915-93a368ed2073?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2l2aWwlMjBlbmdpbmVlcmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-    alt="alt"
-    style="width:100%; height:90%;"
-    >
+    alt="alt" style="width:100%; height:90%;">
   </div>
   <div class="contentStyle">
     <div style="text-align:center; margin: 20px 0;">
       <mat-label style="font-size: 24px; font-weight: 500">Create an Account</mat-label>
       <div>
-        <button mat-flat-button color="primary" >For Seller</button>
-        <button mat-flat-button color="primary" >For Buyer</button>
+        <button type="button" mat-flat-button color="primary" >For Seller</button>
+        <button type="button" mat-flat-button color="primary" >For Buyer</button>
       </div>
     </div>
     <table class="example-full-width" cellspacing="0">
       <mat-form-field class="example-full-width, widthSize" appearance="fill">
           <mat-label>First name</mat-label>
-          <input id="firstName" type="text" matInput formControlName="firstName">
+          <input id="firstName" type="text" matInput formControlName="firstName" [errorStateMatcher]="matcher">
         </mat-form-field>
         <mat-form-field class="example-full-width, widthSize" appearance="fill">
           <mat-label>Last Name</mat-label>
-          <input matInput type="text" formControlName="lastName">
+          <input id="lastName" type="text" matInput formControlName="lastName" [errorStateMatcher]="matcher">
         </mat-form-field>
     </table>
     <p>
@@ -28,7 +26,6 @@
       <mat-label>Email</mat-label>
       <input id ="email" type="email" type="text" formControlName="email" matInput  [errorStateMatcher]="matcher"
             placeholder="Ex. pat@example.com">
-      <mat-hint>Errors appear instantly!</mat-hint>
       <mat-error ><!--*ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')" -->
         Please enter a valid email address
       </mat-error>
@@ -38,15 +35,14 @@
     </mat-form-field>
     </p>
     <p>
-      <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Password</mat-label>
       <input id="password" type="password"  matInput  formControlName="password" [errorStateMatcher]="matcher">
-      <mat-hint>Errors appear instantly!</mat-hint>
-      <mat-error *ngIf="false">
-        Please enter a valid email address
+      <mat-error ><!--*ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')" -->
+        Please enter a valid password
       </mat-error>
-      <mat-error *ngIf="false">
-        Email is <strong>required</strong>
+      <mat-error><!--*ngIf="emailFormControl.hasError('required')"-->
+        Password is <strong>required</strong>
       </mat-error>
     </mat-form-field>
     </p>
@@ -65,7 +61,6 @@
           <mat-label>City</mat-label>
           <input matInput type="text" placeholder="Ex. San Francisco" formControlName="city">
         </mat-form-field>
-
         <mat-form-field class="example-full-width, widthSize" appearance="fill">
           <mat-label>State</mat-label>
           <input matInput type="text" placeholder="Ex. California" formControlName="state">
