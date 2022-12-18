@@ -24,11 +24,19 @@ export class AccountsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-   profileForm = new FormGroup({
+   signupForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
     email: new FormControl('', [Validators.email]),
+    password: new FormControl('', [Validators.pattern('[a-zA-Z @ 1-9]*')]),
+    address: new FormControl('', [Validators.required, Validators.minLength(2), Validators.max(100)]),
+    city: new FormControl('', [Validators.required, Validators.minLength(5)]),
+    state: new FormControl('', [Validators.required])
 
   });
 
+    onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.signupForm.value)
+  }
 }
