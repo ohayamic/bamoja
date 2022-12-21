@@ -70,7 +70,7 @@
       <span> Already have account?</span>
       <a mat-flat-button href="/login">Login</a>
       <p style="text-align:center;">
-      <button type="submit" mat-flat-button color="primary" class="createBtn">Create Account</button>
+      <button type="submit" mat-flat-button color="primary" class="createBtn" [disabled]="!signUpForm.valid">Create Account</button>
       </p>
     </div>
   </div>
