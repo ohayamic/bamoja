@@ -6,12 +6,13 @@
 .featuredProducts{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .featuredProducts> div{
   width:240px;
   padding: 10px;
-   margin: 0px 5px;
+  margin: 0px 5px;
 }
 
 .featuredProductsImage{
